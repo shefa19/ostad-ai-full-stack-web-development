@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Contact Form</h1>
+      <fieldset>
+        <legend>Image</legend>
+        <input type="file" name="profileImage" id="" />
+      </fieldset>
+
+      <hr />
+
+      <details>
+        <summary>Name</summary>
+
+        <table>
+          <tr>
+            <td><label for="firstName">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Enter first name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="midName">Middle Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="middleName"
+                id="midName"
+                placeholder="Enter middle name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lastName">Last Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Enter Last name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="nick">Nickname</label></td>
+            <td>
+              <input
+                type="text"
+                name="nickName"
+                id="nick"
+                placeholder="Enter nickname"
+              />
+            </td>
+          </tr>
+        </table>
+      </details>
+
+      <hr />
+
+      <details>
+        <summary>Phone</summary>
+
+        <table>
+          <tr>
+            <td><label for="mainNum">Main</label></td>
+            <td>
+              <input
+                type="tel"
+                name="mainNumber"
+                id="mainNum"
+                value="+880 "
+                placeholder="+880 1700 000000"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="homeNum">Home</label></td>
+            <td>
+              <input
+                type="tel"
+                name="homeNumber"
+                id="homeNum"
+                value="+880 "
+                placeholder="+880 1700 000000"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="workNum">Work</label></td>
+            <td>
+              <input
+                type="tel"
+                name="workNum"
+                id="workNum"
+                value="+880 "
+                placeholder="+880 1700 000000s"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="otherNum">Other</label></td>
+            <td>
+              <input
+                type="tel"
+                name="otherNumber"
+                id="otherNum"
+                value="+880 "
+                placeholder="+880 1700 000000"
+              />
+            </td>
+          </tr>
+        </table>
+      </details>
+
+      <hr />
+
+      <details>
+        <summary>Email</summary>
+
+        <table>
+          <tr>
+            <td><label for="mainMail">Main</label></td>
+            <td>
+              <input
+                type="email"
+                name="mainEmail"
+                id="mainMail"
+                placeholder="e.g. sishefa19@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="homeMail">Home</label></td>
+            <td>
+              <input
+                type="email"
+                name="homeEmail"
+                id="homeMail"
+                placeholder="e.g. sishefa19@gmail.com "
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="otherMail">Other</label></td>
+            <td>
+              <input
+                type="email"
+                name="otherEmail"
+                id="otherMail"
+                placeholder="e.g. sishefa19@gmail.com"
+              />
+            </td>
+          </tr>
+        </table>
+      </details>
+
+      <hr />
+
+      <label for="address">Address</label><br />
+      <textarea
+        name="address"
+        id="address"
+        placeholder="Enter full address"
+      ></textarea>
+
+      <hr />
+
+      <details>
+        <summary>Important Dates</summary>
+
+        <table>
+          <tr>
+            <td><label for="birthday">Birthday</label></td>
+            <td><input type="date" name="birthday" id="birthday" /></td>
+          </tr>
+          <tr>
+            <td><label for="anniversary">Anniversary</label></td>
+            <td><input type="date" name="anniversary" id="anniversary" /></td>
+          </tr>
+          <tr>
+            <td><label for="firstMeet">First Meet</label></td>
+            <td><input type="date" name="firstMeet" id="firstMeet" /></td>
+          </tr>
+        </table>
+      </details>
+
+      <hr />
+
+      <label for="notes">Notes</label><br />
+      <textarea
+        name="notes"
+        id="notes"
+        placeholder="Write something..."
+      ></textarea>
+
+      <hr />
+
+      <label for="website">Website</label><br />
+      <input
+        type="text"
+        name="website"
+        id="website"
+        placeholder="e.g. www.google.com"
+      />
+
+      <hr />
+
+      <button type="submit">Save</button>
+      <button type="reset">Cancel</button>
+    </form>
+  </body>
+</html>

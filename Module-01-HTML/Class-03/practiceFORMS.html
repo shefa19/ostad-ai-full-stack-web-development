@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <caption>
+        <h1>Forms & Inputs</h1>
+      </caption>
+      <p>Every input type .fieldset . datalist . validation attributes</p>
+
+      <label for="name"> FULL NAME </label>
+      <input
+        type="text"
+        name="fullName"
+        id="name"
+        placeholder="Shefaul Islam"
+        required
+      />
+      <br /><br />
+      <label for="email"> EMAIL ADDRESS </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="sishefa19@gmail.com"
+      />
+      <br /><br />
+      <label for="password"> PASSWORD </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Min. 8 characters"
+      />
+      <br /><br />
+      <label for="phone"> PHONE NUMBER </label>
+      <input
+        type="tel"
+        name="phoneNumber"
+        id="phone"
+        placeholder="+880 1717 026630"
+      />
+      <br /><br />
+      <label for="portfolio"> PORTFOLIO URL </label>
+      <input
+        type="url"
+        name="portfolio"
+        id="portfolio"
+        placeholder="https://shefa19.github.io/my-portfolio/"
+      />
+      <br /><br />
+      <label for="age">
+        AGE
+        <input type="number" name="age" id="age" placeholder="25" />
+      </label>
+      <br /><br />
+      <label for="db">
+        DATE OF BIRTH
+        <input type="date" name="date of birth" id="db" />
+      </label>
+      <br /><br />
+      <label for="callTime"> PREFERRED CALL TIME </label>
+      <input type="datetime-local" name="callTime" id="callTime" />
+      <br /><br />
+      <label for="course">COURSE (WITH AUTOCOMPLETE)</label>
+      <input
+        type="text"
+        name="course"
+        id="course"
+        placeholder="Start typing a course name"
+        list="course_list"
+      />
+      <datalist id="course_list">
+        <option value="HTML & CSS Fundamentals"></option>
+        <option value="JavaScript Deep Dive"></option>
+        <option value="React + TypeScript"></option>
+        <option value="Node.js & Express"></option>
+        <option value="MongoDB & Mongoose"></option>
+        <option value="Full Stack MERN"></option>
+      </datalist>
+      <br /><br />
+      <label for="level">SKILL LEVEL</label><br />
+      <select name="level" id="level">
+        <option value disabled selected>choose level</option>
+        <optgroup label="Beginner">
+          <option value="abs">Absolute Beginner</option>
+          <option value="some">Some Exposure</option>
+        </optgroup>
+        <optgroup label="Intermediate">
+          <option value="">Familiar with basics</option>
+          <option value="">Already building projects</option>
+        </optgroup>
+        <optgroup label="Advanced">
+          <option value="pro">Professional Developer</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <label for="color">FAVORITE COLOR</label><br />
+      <input type="color" name="color" id="color" value="#ff006f" />
+      <br /><br />
+      <label for="satisfaction"
+        >SATISFACTION LEVEL: <b>7/</b><small>10</small> </label
+      ><br />
+      <input type="range" name="Satisfaction" id="satisfaction" />
+      <br /><br />
+      <label for="stopic">SEARCH TOPICS</label><br />
+      <input
+        type="text"
+        name="Topic"
+        id="stopic"
+        placeholder="Search..."
+        list="topicList"
+      />
+      <datalist id="topicList">
+        <option value="admission">Admission 2026</option>
+        <option value="vorti">Vorti 2026</option>
+        <option value="notices">Admission Notices</option>
+      </datalist>
+      <br /><br />
+      <label for="image">PROFILE PHOTO</label><br />
+      <input type="file" name="Profile Photo" id="image" />
+      <br /><br />
+
+      <label for="">PREFERRED LEARNING MODE</label><br />
+      <label for="mode">
+        <input type="radio" name="mode" id="video" checked />VIDEO LECTURES </label
+      ><br />
+      <label for="docs">
+        <input type="radio" name="mode" id="docs" />READING / DOCS </label
+      ><br />
+      <label for="project">
+        <input type="radio" name="mode" id="project" />HANDS-ON PROJECTS
+      </label>
+      <br /><br />
+      <fieldset>
+        <legend>TOPICS OF INTEREST</legend>
+        <label for="html"
+          ><input type="checkbox" id="html" />HTML & SEMANTICS</label
+        ><br />
+        <label for="css"
+          ><input type="checkbox" name="" id="css" />CSS & LAYOUT</label
+        ><br />
+        <label for="JavaScript"
+          ><input type="checkbox" id="JavaScript" />JAVASCRIPT</label
+        ><br />
+      </fieldset>
+      <br /><br />
+      <label for="goals">GOALS & BACKGROUND</label><br />
+      <textarea
+        name="goals"
+        id="goals"
+        placeholder="What do you hope to build after this course"
+      ></textarea>
+      <br /><br />
+      <button type="submit">Submit Application</button>
+      <button type="reset">Rest Form</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Book</title>
+  </head>
+  <body>
+    <form action="">
+      <h2>Address Book</h2>
+
+      <label for="fName">First Name:</label>
+      <input
+        type="text"
+        name="First Name"
+        id="fName"
+        placeholder="Enter your first name"
+        required
+      />
+      <br /><br />
+      <label for="lName">Last Name:</label>
+      <input
+        type="text"
+        name="Last Name"
+        id="lName"
+        placeholder="Enter your last name"
+      />
+      <br /><br />
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        name="Phone Number"
+        id="phone"
+        placeholder="+880 1717 026630"
+        required
+      />
+      <br /><br />
+      <label for="mail">Email:</label>
+      <input
+        type="email"
+        name="Email"
+        id="mail"
+        placeholder="sishefa19@gmail.com"
+      />
+      <br /><br />
+      <label for="">Gender:</label>
+      <label for="male">
+        Male
+        <input type="radio" name="gender" id="gender" value="Male" checked />
+      </label>
+      <label for="Female">
+        Female
+        <input type="radio" name="gender" id="gender" value="Female" />
+      </label>
+      <br /><br />
+
+      <button type="submit" style="background-color: rgb(17, 255, 72)">
+        Submit
+      </button>
+      <button
+        type="reset"
+        style="background-color: rgb(255, 109, 109); color: aliceblue"
+      >
+        Reset
+      </button>
+    </form>
+
+    <br />
+
+    <h2>Sample Data</h2>
+
+    <h4 style="text-decoration: underline">Sample - 1:</h4>
+    <ul type="None">
+      <li><b>First Name:</b> Md. Shefaul</li>
+      <li><b>Last Name:</b> Islam</li>
+      <li><b>Phone Number:</b> 01717026630</li>
+      <li><b>Email:</b> sishefa19@gmail.com</li>
+      <li><b>Gender:</b> Male</li>
+    </ul>
+    <h4 style="text-decoration: underline">Sample - 2:</h4>
+    <ul type="None">
+      <li><b>First Name:</b> Md. Robiul</li>
+      <li><b>Last Name:</b> Islam</li>
+      <li><b>Phone Number:</b> 017289716</li>
+      <li><b>Email:</b> mdrobiul1982@gmail.com</li>
+      <li><b>Gender:</b> Male</li>
+    </ul>
+    <h4 style="text-decoration: underline">Sample - 3:</h4>
+    <ul type="None">
+      <li><b>First Name:</b> Most. Shefaly</li>
+      <li><b>Last Name:</b> Begum</li>
+      <li><b>Phone Number:</b> 01730669168</li>
+      <li><b>Email:</b> shefalybegum@gmail.com</li>
+      <li><b>Gender:</b> Female</li>
+    </ul>
+  </body>
+</html>
