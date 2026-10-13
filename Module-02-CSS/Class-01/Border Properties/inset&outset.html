@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inset & Outset</title>
+
+    <style>
+      .container {
+        display: flex;
+        gap: 10px;
+      }
+      .box {
+        height: 50px;
+        width: 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #box1 {
+        border: 10px inset pink;
+      }
+      #box2 {
+        border: 10px outset lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Hi!</div>
+      <div class="box" id="box2">Hi!</div>
+    </div>
+  </body>
+</html>
