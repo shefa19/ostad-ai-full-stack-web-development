@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.navbar {
+  background-color: #0f172a;
+  padding: 15px 8%;
+  display: block;
+  min-height: 65px;
+}
+
+#logo {
+  color: #38bdf8;
+  display: inline-block;
+  margin: 0;
+}
+
+nav {
+  float: right;
+  padding-top: 5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  text-align: center;
+  background-color: #dbeafe;
+  min-height: 250px;
+  padding: 55px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero span {
+  color: #2563eb;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: 2px solid #2563eb;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #2563eb;
+}
+
+.container {
+  text-align: center;
+  padding: 30px 15px;
+  min-height: 250px;
+}
+
+.section-title {
+  color: #0f172a;
+}
+
+.skill-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  min-width: 200px;
+  min-height: 140px;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border: 2px solid #bfdbfe;
+  border-radius: 8px;
+}
+
+.skill-card h3 {
+  color: #2563eb;
+}
+
+.skill-card p {
+  line-height: 1.5;
+}
+
+.contact {
+  background-color: #e2e8f0;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #94a3b8;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 25px;
+  border: 2px solid #2563eb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+footer {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    text-align: center;
+    padding: 15px;
+  }
+
+  nav {
+    float: none;
+    margin-top: 15px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .skill-card {
+    width: 90%;
+    min-width: 0;
+  }
+}
