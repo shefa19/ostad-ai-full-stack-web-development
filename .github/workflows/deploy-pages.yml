@@ -1,0 +1,56 @@
+name: Deploy OSTAD Assignments to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare website files
+        run: |
+          mkdir -p _site
+
+          # Personal Portfolio Website
+          cp -R "Module-04-Responsive_Web_Desig/Assignment/Personal-Portfolio-Website/." _site/
+
+          # Future assignments can be added here:
+          # mkdir -p _site/assignment-01
+          # cp -R "YOUR-ASSIGNMENT-FOLDER/." _site/assignment-01/
+
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
