@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      //   JavaScript Object
+      let student = {
+        name: "Shefaul",
+        roll: 42,
+        dept: "CSE",
+        semester: 6,
+        great: function () {
+          console.log("Hello");
+        },
+      };
+
+      student.subject = "Computer";
+      delete student.roll;
+
+      console.log(student.name);
+      console.log(student.dept);
+      console.log(student["semester"]);
+      console.log(student);
+      student.great();
+    </script>
+  </body>
+</html>

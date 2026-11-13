@@ -1,19 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        document.write("<h1>Hello World!</h1>");
-        console.log("Hello World!");
+      document.write("<h1>Hello World!</h1>");
+      console.log("Hello World!");
 
+      //Single line comment
 
-        //Single line comment
-        
-        /*
+      /*
         Multiline comment
         ----
         ----
@@ -21,25 +20,76 @@
         ----
         ---
         */
-       
-        //var
-        var name = "Shefaul Islam";
-        //document.write(name);
 
+      //var
+      var name = "Shefaul Islam";
+      //document.write(name);
 
-        //let
-        let roll = 42;
-        //document.write(roll);
+      //let
+      let roll = 42;
+      //document.write(roll);
 
- 
-        //const
-        const dept = "CSE";
-        //document.write(dept);
+      //const
+      const dept = "CSE";
+      //document.write(dept);
 
-        
-        
+      //Data Type
+      //===================//
 
+      //number
+      let num = 10;
+      let num_1 = 10.5;
 
+      //string
+      let str = "Hello World";
+      let str_1 = "Hello Bangladesh";
+      let str_2 = "20";
+
+      //boolean
+      let bool = true;
+      let bool_1 = false;
+
+      //undefined
+      let x;
+      console.log(x);
+
+      //null
+      let data = null;
+      console.log(data);
+
+      //symbol
+      let sym = Symbol("Hello World");
+      console.log(sym);
+
+      //bigInt
+      let bigInt = 34343439483948394839434839483943948394394394394394n;
+      console.log(bigInt);
+
+      //Non-Primitive Data Type
+      //==============================
+
+      //object
+
+      const student = {
+        name: "Shefa",
+        age: 25,
+        isPassed: true,
+      };
+
+      console.log(student.name);
+      console.log(student.age);
+
+      //array
+      const fruits = ["Mango", "Banana", "Apple"];
+      console.log(fruits);
+      console.log(fruits[2]);
+
+      //function
+      function sayHlw() {
+        console.log("Hello World!");
+      }
+
+      sayHlw();
     </script>
-</body>
+  </body>
 </html>

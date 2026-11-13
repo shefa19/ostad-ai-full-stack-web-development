@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator</title>
+  </head>
+  <body>
+    <script>
+      // Arithmetic Operators
+      let a = 10;
+      let b = 5;
+
+      console.log(a + b); // Addition
+      console.log(a - b); // Subtraction
+      console.log(a * b); // Multiplication
+      console.log(a / b); // Division
+      console.log(a % b); // Modulus (Reminder)
+
+      // Assignment Operators
+      let x = 10;
+      let y = 5;
+
+      x = x + 2;
+      y -= 3;
+
+      console.log((y *= 2));
+
+      // Comparison Operators
+      let num_1 = 10;
+      let num_2 = 5;
+
+      if (num_1 == num_2) {
+        console.log("Ok");
+      }
+      if (num_1 === num_2) {
+        console.log("Not same");
+      }
+
+      // Logical Operator
+      if (num_1 > a && num_2 == b) {
+        console.log("Ok");
+      }
+
+      // Unary & Ternary Operator
+      let age = 25;
+
+      console.log(age++);
+
+      let isAdult = age >= 18 ? "Adult" : "Minor";
+      console.log(isAdult);
+    </script>
+  </body>
+</html>

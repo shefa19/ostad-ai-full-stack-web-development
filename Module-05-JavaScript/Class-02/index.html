@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Array
+      let fruits = ["Apple", "Banana", "Orange"];
+      console.log(fruits[2]);
+
+      //   For in Loop
+      let student = {
+        name: "Shefaul",
+        roll: 42,
+        dept: "CSE",
+      };
+
+      for (let key in student) {
+        console.log(key + " : " + student[key]);
+      }
+
+      //   For of Loop
+      const users = ["Shefa", "Rifa", "Rafsan", "Rafit", "Sabbir"];
+
+      for (const name of users) {
+        console.log(name);
+      }
+    </script>
+  </body>
+</html>
